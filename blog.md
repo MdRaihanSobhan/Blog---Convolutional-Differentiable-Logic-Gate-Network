@@ -92,7 +92,7 @@ Below is a list of all possible logic gates:
 As LGNs are not differentiable, the authors proposed to differentiably relax each logic gate to real-valued logic via probabilistic logic shown in the above image. The authors also introduced a probability distribution over the $16$ possible logic gates ($\mathcal{S}$), which is encoded as the softmax of $16$ trainable parameters. For a trainable parameter vector $\mathbf{z} \in R^{16}$ and all $16$ possible logic gate operations as $g_0, \dots, g_{15}$, the differentiable logic gate as the expectation over its outputs can be computed in closed-form as
 
 $$
-f_z(a_1, a_2) = \mathbb{E}_{i \sim \mathcal{S}(z), A_1 \sim B(a_1), A_2 \sim B(a_2)} \left[ g_i(A_1, A_2) \right] = 
+f_\mathbf{z}(a_1, a_2) = \mathbb{E}_{i \sim \mathcal{S}(z), A_1 \sim B(a_1), A_2 \sim B(a_2)} \left[ g_i(A_1, A_2) \right] = 
 \sum_{i=0}^{15} \frac{\exp(z_i)}{\sum_{j} \exp(z_j)} \cdot g_i(a_1, a_2)
 $$
 
