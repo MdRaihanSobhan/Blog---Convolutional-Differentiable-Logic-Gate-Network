@@ -108,7 +108,7 @@ With these two ingredients, logic gate networks become end-to-end differentiable
 
 - **Proposed Solution: Residual Initializations** 🚀
   - Initialize each logic gate as a feedforwarding logic gate 🔌, choosing $A$ as the canonical choice.
-  - Set the probability for $A$ to around $90\%$ 📈 and other gates to $0.67\%$ 📉.
+  - Set the probability for $A$ to around $90$% 📈 and other gates to $0.67$% 📉.
 
 - **Benefits:**
   - Prevents loss of information 🧠 and vanishing gradients 🌀.
@@ -138,13 +138,13 @@ The authors constructed each logic gate network kernel as a complete binary tree
 
 During training, the network learns which logic gate operation to choose at each node. Each logic tree kernel is parameterized by the choices of the $(2^d - 1)$ logic gates, which are learnable. For a logic kernel of depth $2$, these gates are $( f_1, f_2, f_3 )$. Given input activations $( a_1, a_2, a_3, a_4 )$, the kernel is expressed as a binary tree:
 
-$$
+```math
 f_3(f_1(a_1, a_2), f_2(a_3, a_4))
-$$
+```
 
 For an input $A$ of shape $m \times h \times w$ ($m$ input channels; height $h$; width $w$) and connection index tensors $C_M, C_H, C_W$ each of shape $n \times 4$ ($n$ tree kernels i.e channels; $4$ inputs per tree), the output is:
 
-$$
+```math
 \textbf{A}' \left[ k, i, j \right] = 
 f_3^k
 ( 
@@ -154,16 +154,16 @@ f_1^k
   \mathbf{A}[C_M[k,2], C_H[k,2]+i, C_W[k,2]+j]
 )
 ,
-$$
+```
 
-$$
+```math
 f_2^k
 (
   \mathbf{A}[C_M[k,3], C_H[k,3]+i, C_W[k,3]+j],
   \mathbf{A}[C_M[k,4], C_H[k,4]+i, C_W[k,4]+j]
 )
 )
-$$
+```
 
 for $k \in \{1, \dots, n\}$, where $n$ is the number of tree kernels, $i \in \{1, \dots, (h - s_h + 1)\}$, and $j \in \{1, \dots, (w - s_w + 1)\}$, where $s_h \times s_w$ being the receptive field size. For each output channel $k$ the logic gates $f^k_1, f^k_2, f^k_3$ are independently chosen and parameterized. Per convolution, all placements (indexed via $( i, j )$ of one kernel share their parameters.
 
@@ -197,19 +197,19 @@ The author evaluated the proposed *Convolutional Differentiable Logic Gate Netwo
 
 - **Model Efficiency:**
   - $29\times$ $\text{--}$ $61\times$ fewer gates
-  - **Model (M):** $3.08M$ gates, similar accuracy to *large TTNet* model but with only $1.6\%$ of the logic gates.
+  - **Model (M):** $3.08M$ gates, similar accuracy to *large TTNet* model but with only $1.6$% of the logic gates.
   - **Model (B):** $16M$ gates, matches *FINN* accuracy with a $56\times$ reduction in gates ($901M$ to $16M$).
-  - **Model (L):** $28.9M$ gates, achieves $84.99\%$ accuracy, requiring $44.6\times$ fewer gates than *LUTNet* for comparable accuracy.
-  - **Model (G):** $61M$ gates, achieves $86.29\%$ accuracy, matching *Network-in-Network XNOR-Net* with $29\times$ fewer gates.
+  - **Model (L):** $28.9M$ gates, achieves $84.99$% accuracy, requiring $44.6\times$ fewer gates than *LUTNet* for comparable accuracy.
+  - **Model (G):** $61M$ gates, achieves $86.29$% accuracy, matching *Network-in-Network XNOR-Net* with $29\times$ fewer gates.
 
   ![CIFAR10 acc vs gate](images/cifar10/acc%20vs%20gate%20count.png)
   ![CIFAR10 res gate](images/cifar10/cifar10%20res%20gate.png)
 
 - **FPGA Inference Time:**  
   - Achieves $41.6$ million FPS compared to *FINN's* $22K$ FPS, a $1900\times$ speed improvement.
-  - **LogicTreeNet-S:** $60.38\%$ accuracy, $9$ ns per image.
-  - **LogicTreeNet-M:** $71.01\%$ accuracy, $9$ ns per image.
-  - **LogicTreeNet-B:** $80.17\%$ accuracy, $24$ ns per image. 
+  - **LogicTreeNet-S:** $60.38$% accuracy, $9$ ns per image.
+  - **LogicTreeNet-M:** $71.01$% accuracy, $9$ ns per image.
+  - **LogicTreeNet-B:** $80.17$% accuracy, $24$ ns per image. 
 
   ![CIFAR10 FPGA](images/cifar10/cifar%2010%20res%20timing.png)
 
@@ -217,18 +217,18 @@ The author evaluated the proposed *Convolutional Differentiable Logic Gate Netwo
 
 - **Accuracy Improvement** 🎯:
   - Small model improves accuracy 📈 over *FINN* while reducing model size 📉 by $36\times$ and inference time ⏱️ by $160\times$.
-  - Medium model achieves $99.23\%$ test accuracy 🧪, outperforming all $BNNs$ in the literature 📚.
+  - Medium model achieves $99.23$% test accuracy 🧪, outperforming all $BNNs$ in the literature 📚.
 
 - **Inference Time Reduction** ⏳:
   - Medium model reduces inference time ⏱️ by $30,000\times$ compared to *LowBitNN*, increasing throughput 🚀 from $6,600$ FPS to $200,000$ FPS.
 
 - **Error Reduction**:
-  - Decreases error from $1.99\%$ to $0.77\%$ compared to *LUTNet*.
-  - Larger FPGA used by *LUTNet* could enable placing *LogicTreeNet-L* ($0.65\%$ error) multiple times for multiple classifications per cycle 🔄.
+  - Decreases error from $1.99$% to $0.77$% compared to *LUTNet*.
+  - Larger FPGA used by *LUTNet* could enable placing *LogicTreeNet-L* ($0.65$% error) multiple times for multiple classifications per cycle 🔄.
 
 - **Efficiency and Accuracy** ⚡🎯:
-  - Models are the most efficient ⚡ in the $\geq 98\%$ accuracy regime 🎯.
-  - Highest accuracy models with up to $99.35\%$ accuracy 🏆.
+  - Models are the most efficient ⚡ in the $\geq 98$% accuracy regime 🎯.
+  - Highest accuracy models with up to $99.35$% accuracy 🏆.
 
   ![MNIST Results](images/mnist/mnist%20res.png)
 
