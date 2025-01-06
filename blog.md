@@ -196,7 +196,7 @@ The author evaluated the proposed *Convolutional Differentiable Logic Gate Netwo
 ### CIFAR-10 🖼️
 
 - **Model Efficiency:**
-  - $29\times$ $\text{--}$ $61\times$ fewer gates
+  - $29\times$ - $61\times$ fewer gates
   - **Model (M):** $3.08M$ gates, similar accuracy to *large TTNet* model but with only $1.6$% of the logic gates.
   - **Model (B):** $16M$ gates, matches *FINN* accuracy with a $56\times$ reduction in gates ($901M$ to $16M$).
   - **Model (L):** $28.9M$ gates, achieves $84.99$% accuracy, requiring $44.6\times$ fewer gates than *LUTNet* for comparable accuracy.
@@ -279,7 +279,7 @@ The paper 📄 represents a significant step forward 🚀 in integrating logic g
 
 ## Conclusion 🎯
 
-This work introduced *Convolutional Differentiable Logic Gate Networks (CLGNs)* 🧠 with innovations like *Residual Initializations* 🚀 and *Logical OR Pooling*, enhancing training efficiency ⏱️ and enabling deeper networks 📏. The *LogicTreeNet* architecture 🌲 significantly reduces model sizes 📉 and improves accuracy 🎯, achieving up to **1900×** faster inference speeds ⚡ and $29\times$ $\text{--}$ $61\times$ fewer gates 🔌 on hardware 🖥️. Future research 🔍 could apply *CLGNs* to tasks like object localization 📍, promoting their use in embedded and real-time applications 📱.
+This work introduced *Convolutional Differentiable Logic Gate Networks (CLGNs)* 🧠 with innovations like *Residual Initializations* 🚀 and *Logical OR Pooling*, enhancing training efficiency ⏱️ and enabling deeper networks 📏. The *LogicTreeNet* architecture 🌲 significantly reduces model sizes 📉 and improves accuracy 🎯, achieving up to **1900×** faster inference speeds ⚡ and $29\times$ - $61\times$ fewer gates 🔌 on hardware 🖥️. Future research 🔍 could apply *CLGNs* to tasks like object localization 📍, promoting their use in embedded and real-time applications 📱.
 
 ---
 
