@@ -165,7 +165,7 @@ f_2^k
 )
 ```
 
-for $k \in \{1, \dots, n\}$, where $n$ is the number of tree kernels, $i \in \{1, \dots, (h - s_h + 1)\}$, and $j \in \{1, \dots, (w - s_w + 1)\}$, where $s_h \times s_w$ being the receptive field size. For each output channel $k$ the logic gates $f^k_1, f^k_2, f^k_3$ are independently chosen and parameterized. Per convolution, all placements (indexed via $( i, j )$ of one kernel share their parameters.
+for $k \in \{ 1, \dots, n \}$, where $n$ is the number of tree kernels, $i \in \{1, \dots, (h - s_h + 1)\}$, and $j \in \{1, \dots, (w - s_w + 1)\}$, where $s_h \times s_w$ being the receptive field size. For each output channel $k$ the logic gates $f^k_1, f^k_2, f^k_3$ are independently chosen and parameterized. Per convolution, all placements indexed via $( i, j )$ of one kernel share their parameters.
 
 - $C_M \in \{1, \dots, m\}^{n \times 4}$ indicates which out of $m$ input channels is selected
 - $C_H \in \{1, \dots, s_h\}^{n \times 4}$ and $C_W \in \{1, \dots, s_w\}^{n \times 4}$ indicate the selected positions inside the receptive field of size $s_h \times s_w$
