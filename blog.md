@@ -280,7 +280,7 @@ The paper 📄 represents a significant step forward 🚀 in integrating logic g
 
 ## Conclusion 🎯
 
-This work introduced *Convolutional Differentiable Logic Gate Networks (CLGNs)* 🧠 with innovations like *Residual Initializations* 🚀 and *Logical OR Pooling*, enhancing training efficiency ⏱️ and enabling deeper networks 📏. The *LogicTreeNet* architecture 🌲 significantly reduces model sizes 📉 and improves accuracy 🎯, achieving up to **1900×** faster inference speeds ⚡ and $29\times$ - $61\times$ fewer gates 🔌 on hardware 🖥️. Future research 🔍 could apply *CLGNs* to tasks like object localization 📍, promoting their use in embedded and real-time applications 📱.
+This work introduced *Convolutional Differentiable Logic Gate Networks (CDLGNs)* 🧠 with innovations like *Residual Initializations* 🚀 and *Logical OR Pooling*, enhancing training efficiency ⏱️ and enabling deeper networks 📏. The *LogicTreeNet* architecture 🌲 significantly reduces model sizes 📉 and improves accuracy 🎯, achieving up to **1900×** faster inference speeds ⚡ and $29\times$ - $61\times$ fewer gates 🔌 on hardware 🖥️. Future research 🔍 could apply *CDLGNs* to tasks like object localization 📍, promoting their use in embedded and real-time applications 📱.
 
 ---
 
