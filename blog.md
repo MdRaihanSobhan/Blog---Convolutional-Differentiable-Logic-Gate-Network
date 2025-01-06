@@ -1,4 +1,4 @@
-# Faster, Smarter, Greener: Achieving Unmatched Performance in Vision Models with Convolutional Differentiable Logic Gate Networks
+# Faster, Smarter, Greener: Achieving Unmatched Performance in Vision Models with Convolutional Differentiable Logic Gate Networks 🚀🧠🌱
 
 **Authors**: Sabah Ahmed, Md. Raihan Sobhan, Tahsin Wahid  
 **Date**: January 07, 2025
