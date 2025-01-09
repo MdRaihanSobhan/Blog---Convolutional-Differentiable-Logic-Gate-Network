@@ -1,19 +1,31 @@
 
 # NeurIPS2024-Papers-Blog-and-BlogReview
 
+## What is this repository about?
+This repository contains the submission for the CSE471 : Machine Learning Assignment. The assignment is to write a blog on a paper from NeurIPS 2024 and review two blogs on another two papers from the same conference.
+
 **Team Members**:
 
 - 1905095 - Md. Raihan Sobhan
 - 1905115 - Tahsin Wahid
 - 1905118 - Sabah Ahmed
 
+--- 
 ## Contents of The Repositiory:
+
+**Blogs and Reviews:**
 - A [Blog](/blog.md) on the Paper ["Convolutional Differentiable Logic Gate Networks"](https://openreview.net/forum?id=4bKEFyUHT4) published in NeurIPS 2024.
 
 - A [Review](/review_1.md) of the [Blog](https://github.com/ferb97/CSE471-Machine-Learning-Assignment/blob/main/1905097_1905101_CSE471_DRL_Guided_Search.md) on the Paper ["When LLM Meets DRL: Advancing Jailbreaking Efficiency via DRL-guided Search"](https://arxiv.org/abs/2406.08705) published in NeurIPS 2024.
 
 - A [Review](/review_2.md) of the [Blog](https://abir66.hashnode.dev/llm-evaluators-recognize-and-favor-their-own-generations) on the Paper ["LLM Evaluators Recognize and Favor Their Own Generations"](https://openreview.net/forum?id=4NJBV6Wp0h) published in NeurIPS 2024.
 
+
+
+**Assignment Specification:**
+- [Specs](/assignment_spec.pdf)
+
+--- 
 
 ## Blog : Convolutional Differentiable Logic Gate Networks
 
