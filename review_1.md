@@ -1,4 +1,5 @@
-<h3><b><p align="center"> <a href="https://github.com/ferb97/CSE471-Machine-Learning-Assignment/blob/main/1905097_1905101_CSE471_DRL_Guided_Search.md">REVIEW : When LLM Meets DRL: Advancing Jailbreaking Efficiency via DRL-guided Search </a></p></b></h3>
+# [REVIEW: When LLM Meets DRL: Advancing Jailbreaking Efficiency via DRL-guided Search](https://github.com/ferb97/CSE471-Machine-Learning-Assignment/blob/main/1905097_1905101_CSE471_DRL_Guided_Search.md)
+
 
 ## Summary
 This review evaluates a blog post discussing the RLbreaker model, a novel jailbreaking technique that utilizes Deep Reinforcement Learning (DRL) to bypass large language models (LLMs) safety mechanisms. The post provides a comprehensive breakdown of RLbreaker's operational flow, the training and testing process, key observations, and future directions for the technology.
