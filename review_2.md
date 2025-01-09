@@ -72,7 +72,7 @@ The blog accurately summarizes the paper’s main findings, such as biases in LL
 
 ---
 
-## **Critical Assessment of the Paper:**
+## **Critical Assessment of the Blog:**
 
 **Key Strengths:**
 
