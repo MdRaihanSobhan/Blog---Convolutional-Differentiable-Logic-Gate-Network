@@ -1,13 +1,6 @@
 
 
-<h6><b><p align="left">
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Review of blog
-</p></b></h6>
-
-
+##   Review of the blog
 
 <h2><b><p align="center"> <a href="https://github.com/ferb97/CSE471-Machine-Learning-Assignment/blob/main/1905097_1905101_CSE471_DRL_Guided_Search.md">
   When LLM Meets DRL: Advancing Jailbreaking Efficiency via DRL-guided Search 
