@@ -99,10 +99,10 @@ The blog accurately summarizes the paper’s main findings, such as biases in LL
 - **References to Related Work:**
   Including references to relevant papers, videos, and links would enhance reader understanding and provide additional context.
 
-- **Visual Explanation:**
+- **Visual Explanations:**
   Some graphs lack adequate explanations. Proper annotations or captions would make them more effective.
 
-**Overall Impressions:**
+**Overall Impression:**
 
 The blog is an informative and engaging summary suitable for readers familiar with AI. It effectively communicates the essence of the research but could improve accessibility and depth with refinements.
 
