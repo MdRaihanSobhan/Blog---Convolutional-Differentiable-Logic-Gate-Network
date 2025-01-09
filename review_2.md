@@ -99,7 +99,7 @@ The blog accurately summarizes the paper’s main findings, such as biases in LL
 - **References to Related Work:**
   Including references to relevant papers, videos, and links would enhance reader understanding and provide additional context.
 
-- **Visual Explanations:**
+- **Visual Explanation:**
   Some graphs lack adequate explanations. Proper annotations or captions would make them more effective.
 
 **Overall Impressions:**
